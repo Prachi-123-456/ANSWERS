@@ -1,0 +1,43 @@
+1= C
+2= A
+3= C
+4= B
+5= A
+6= B
+7= D
+8= A
+9= A,B
+10= A,B
+11= In multilayer perceptron generally we use sigmoid activation function in hidden layer and in output layer we use linear activation function.
+
+
+12= The learning rate controls how quickly the model is adapted to the problem. ... A learning rate that is too large can cause the model to converge too quickly to a suboptimal solution, whereas a learning rate that is too small can cause the process to get stuck.
+
+13= Need:
+1.w1 + 0.w2 cause a fire, i.e. >= t
+0.w1 + 1.w2 >= t
+0.w1 + 0.w2 doesn't fire, i.e. < t
+1.w1 + 1.w2 also doesn't fire, < t
+
+w1 >= t
+w2 >= t
+0 < t
+w1+w2 < t
+Contradiction.
+
+Note: We need all 4 inequalities for the contradiction. If weights negative, e.g. weights = -4 and t = -5, then weights can be greater than t yet adding them is less than t, but t > 0 stops this.
+
+A "single-layer" perceptron can't implement XOR. The reason is because the classes in XOR are not linearly separable. You cannot draw a straight line to separate the points (0,0),(1,1) from the points (0,1),(1,0).
+
+Led to invention of multi-layer networks.
+ 
+14= In a network of n hidden layers, n derivatives will be multiplied together. If the derivatives are large then the gradient will increase exponentially as we propagate down the model until they eventually explode, and this is what we call the problem of exploding gradient 
+
+15= EPOCH
+
+An epoch is a term used in machine learning and indicates the number of passes of the entire training dataset the machine learning algorithm has completed. ... If the batch size is the whole training dataset then the number of epochs is the number of iterations.
+
+BATCH
+Batch size is a term used in machine learning and refers to the number of training examples utilized in one iteration. The batch size can be one of three options: batch mode: where the batch size is equal to the total dataset thus making the iteration and epoch values equivalent.
+ITERATIONS
+An iteration is a term used in machine learning and indicates the number of times the algorithm's parameters are updated. ... A typical example of a single iteration of training of a neural network would include the following steps: processing the training dataset batch.
