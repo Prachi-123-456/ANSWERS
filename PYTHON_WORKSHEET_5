@@ -1,0 +1,57 @@
+1 = C
+2 = D
+3 = B
+4 = D
+5 = A
+6 = D
+7 = D
+8 = A
+9 = D
+10 = B,C
+11 =  List can be 2-D whereas a set can't. As list are ordered (IE. have serial number) list are comparatively slow to execute whereas sets are fast. List in python is like Array of java or c.
+
+12=  numbers = [1, 2, 3, 4, 5]
+
+squared_numbers = [number ** 2 for number in numbers]
+
+print(squared_numbers)
+
+13 = a = [10,20,30,20,10,50,60,40,80,50,40]
+
+dup_items = set()
+uniq_items = []
+for x in a:
+    if x not in dup_items:
+        uniq_items.append(x)
+        dup_items.add(x)
+
+print(dup_items)
+
+14 =  # sets are define 
+A = {0, 2, 4, 6, 8}; 
+B = {1, 2, 3, 4, 5}; 
+  
+# union 
+print("Union :", A | B) 
+  
+# intersection 
+print("Intersection :", A & B) 
+  
+# difference 
+print("Difference :", A - B) 
+  
+# symmetric difference 
+print("Symmetric difference :", A ^ B)  
+
+
+
+15 = # set of vowels
+vowels = {'a', 'e', 'i', 'u'}
+
+# adding 'o'
+vowels.add('o')
+print('Vowels are:', vowels)
+
+# adding 'a' again
+vowels.add('a')
+print('Vowels are:', vowels)
