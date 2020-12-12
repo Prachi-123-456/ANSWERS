@@ -1,0 +1,44 @@
+1 = SELECT * FROM Movie;
+2 = SELECT MAX(aggregate_expression)
+FROM tables
+[WHERE conditions];
+3 = CREATE TABLE movie(id int, name VARCHAR(100), revenue int, releaseyear int);
+4 = SELECT MAX(budget)
+FROM tables
+[WHERE conditions];
+5 = SELECT mov_title, act_fname, act_lname, role
+FROM movie 
+JOIN movie_cast 
+  ON movie_cast.mov_id=movie.mov_id 
+JOIN actor 
+  ON movie_cast.act_id=actor.act_id
+WHERE actor.act_id IN (
+SELECT act_id 
+FROM movie_cast 
+GROUP BY act_id HAVING COUNT(*)>=2);
+6 = 
+SELECT director, title, MAX(stars)
+FROM Movie
+INNER JOIN Rating USING(mId)
+WHERE director IS NOT NULL
+GROUP BY director;
+7 = SELECT DISTINCT name
+FROM Movie
+INNER JOIN Rating USING(mId)
+INNER JOIN Reviewer USING(Name)
+
+8 = SELECT * FROM Movies,WHERE('language','no.of movies');
+
+9 = SELECT * FROM Movies,WHERE(' movie name','no. of crew members','no. of cast members');
+
+10 = SELECT * FROM Movie WHERE ('Popularitycolumn 1 And 10);
+
+11 = SELECT * FROM Movies WHERE(Rating = 1,2,3);
+
+12 = SELECT * FROM Movies WHERE( “rumoured” movie status);
+
+13 = SELECT * FROM Movies WHERE (Ratings=1,)WHERE(UnitedStates);
+
+14 = SELECT * FROM Movies WHERE('movie_id',' production company');
+
+15 = SELECT * FROM Movies WHERE('HAVING COUNT(*)>=20');
